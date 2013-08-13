@@ -1,0 +1,23 @@
+sudo apt-get install python-software-properties
+sudo apt-add-repository ppa:ubuntugis/ppa
+sudo apt-get update
+apt-get install postgis
+apt-get install pgadmin3
+apt-get install qgis
+
+#conectar no banco e habilitar extensao
+GIStest=# CREATE EXTENSION postgis;
+
+sudo -u postgres createdb template_postgis
+sudo -u postgres psql -d template_postgis -f /usr/share/postgresql/9.1/contrib/postgis-2.0/postgis.sql
+sudo -u postgres psql -d template_postgis -f /usr/share/postgresql/9.1/contrib/postgis-2.0/spatial_ref_sys.sql
+sudo -u postgres psql -d template_postgis -f /usr/share/postgresql/9.1/contrib/postgis-2.0/postgis_comments.sql
+
+# fonte: http://trac.osgeo.org/postgis/wiki/UsersWikiPostGIS20Ubuntu1204
+
+***********************************
+geoserver gsrv
+
+sudo pat-get install openjdk-6-jdk
+
+# mudar o jcaminho da jre no setenv
