@@ -6,6 +6,7 @@ deb ftp://ftp.pucpr.br/debian wheezy main non-free contrib
 deb http://qgis.org/debian wheezy main
 
 # pacotes necessários
+
 -rw-r--r-- 1 root root  1591274 Out  8 13:45 blt_2.4z-4.2_i386.deb
 -rw-r--r-- 1 root root   166966 Out  8 13:45 fonts-lyx_2.0.3-3_all.deb
 -rw-r--r-- 1 root root   327938 Out  8 13:45 gdal-bin_1.9.0-3.1_i386.deb
@@ -148,3 +149,6 @@ apt-get install pgadmin3
 apt-get install qgis python-qgis qgis-plugin-grass
 apt-get install unzip
 
+# arquivos necessários
+https://github.com/coelhotopetudo/postgis/blob/master/oficina/shapes-brasil.zip?raw=true (220.823 kb)
+https://github.com/coelhotopetudo/postgis/blob/master/oficina/ftsl2013/apresentacao-PostGIS-ftsl2013.pdf?raw=true (1836.344 kb)
