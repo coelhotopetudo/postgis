@@ -5,6 +5,9 @@ deb http://ftp.br.debian.org/debian/ wheezy main non-free contrib
 deb ftp://ftp.pucpr.br/debian wheezy main non-free contrib
 deb http://qgis.org/debian wheezy main
 
+# pacotes necessários
+
+
 # instalando os pacotes
 
 apt-get update
